@@ -4,16 +4,9 @@
 
 System.Console.WriteLine("Введите число: ");
 int num = int.Parse(Console.ReadLine());
-int i = 1;
-while (i <= num)
-{
-    if (i % 2 == 0)
+int i = 2;
+while (i <= num)    
     {
         System.Console.Write($"{i}, ");
-        i++;
+        i += 2;
     }
-    else
-    {
-        i++;
-    }   
-}
