@@ -22,6 +22,8 @@ else
     System.Console.WriteLine("Нет");
 } */
 
+
+/* -----------------------------------------------------
 System.Console.Write("Введите число дня недели: ");
 int num = int.Parse(Console.ReadLine());
 if (num == 1)
@@ -55,4 +57,17 @@ else if (num == 7)
 else
 {
     Console.Write("!Неверное число, введите число в диапозоне 1-7!");
-}
+} */
+
+/* -----------------------------------------------------
+System.Console.Write("Введите число: ");
+int num = int.Parse(Console.ReadLine());
+int i = num * -1;
+Console.WriteLine("Входное = {0}, Рабочее = {1}", num, i);
+
+while(i <= num)
+{
+    System.Console.Write("{0} ", i);
+    i++;
+}  */
+
