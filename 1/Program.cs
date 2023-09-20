@@ -59,15 +59,48 @@ else
     Console.Write("!Неверное число, введите число в диапозоне 1-7!");
 } */
 
-/* -----------------------------------------------------
-System.Console.Write("Введите число: ");
-int num = int.Parse(Console.ReadLine());
-int i = num * -1;
-Console.WriteLine("Входное = {0}, Рабочее = {1}", num, i);
 
-while(i <= num)
+
+/* -----------------------------------------------------------------------
+Console.Write("Введите число N: ");
+int N = int.Parse(Console.ReadLine());
+
+int i;
+
+if (N > 0)
 {
-    System.Console.Write("{0} ", i);
-    i++;
-}  */
+    i = -N;
+    while (i <= N)
+    {
+        Console.Write("{0} ", i);
+        i++;
+    }
+}
+else if (N < 0)
+{
+    i = N;
+    while (i <= -N)
+    {
+        Console.Write("{0} ", i);
+        i++;
+    }
+}
+else
+{
+    Console.Write("0"); // Выводим только 0, если N равно нулю.
+}
 
+Console.WriteLine(); // Переход на новую строку для читаемости вывода. */
+
+/* Console.Write("Введите трехзначное число: ");
+int number = int.Parse(Console.ReadLine());
+
+if (number >= 100 && number <= 999)
+{
+    int lastDigit = number % 10;
+    Console.WriteLine($"Последняя цифра числа {number} равна {lastDigit}");
+}
+else
+{
+    Console.WriteLine("Вы ввели число, которое не является трехзначным.");
+} */
