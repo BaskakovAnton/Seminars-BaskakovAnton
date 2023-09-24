@@ -2,3 +2,18 @@
 // 6 -> да
 // 7 -> да
 // 1 -> нет
+
+System.Console.Write("Введите число дня недели: ");
+int num = int.Parse(Console.ReadLine());
+if (num == 6 || num == 7)
+{
+    Console.Write($"{num} -> да");
+}
+else if (num > 7 || num < 0)
+{
+    Console.Write("!Неверное число, введите число в диапазоне 1-7!");
+}
+else
+{
+    Console.Write($"{num} -> нет");
+} 
