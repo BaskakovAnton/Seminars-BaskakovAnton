@@ -60,19 +60,30 @@ using System.Text.RegularExpressions;
 
 
 // Прога, которая принимает на вход координаты 2 точек и находит расстояние между ними в 2Д пространстве.
-System.Console.WriteLine("Введите координату XA: ");
-int XA = int.Parse(Console.ReadLine());
-System.Console.WriteLine("Введите координату YA: ");
-int YA = int.Parse(Console.ReadLine());
-System.Console.WriteLine("Введите координату XB: ");
-int XB = int.Parse(Console.ReadLine());
-System.Console.WriteLine("Введите координату YB: ");
-int YB = int.Parse(Console.ReadLine());
+// System.Console.WriteLine("Введите координату XA: ");
+// int XA = int.Parse(Console.ReadLine());
+// System.Console.WriteLine("Введите координату YA: ");
+// int YA = int.Parse(Console.ReadLine());
+// System.Console.WriteLine("Введите координату XB: ");
+// int XB = int.Parse(Console.ReadLine());
+// System.Console.WriteLine("Введите координату YB: ");
+// int YB = int.Parse(Console.ReadLine());
 
-double ras = Math.Sqrt(Math.Pow(XA - XB, 2) + Math.Pow(YA - YB, 2));
-System.Console.WriteLine($"A({XA},{YA}); B({XB},{YB}) -> {ras}");
+// double ras = Math.Sqrt(Math.Pow(XA - XB, 2) + Math.Pow(YA - YB, 2));
+// string rasf=ras.ToString("N2");
+// System.Console.WriteLine($"A({XA},{YA}); B({XB},{YB}) -> {rasf}");
 
-// double a1 = Math.Pow(XA - XB, 2);
-// System.Console.WriteLine(a1);
-// double a1 = Math.Pow(XA - XB, 2);
-// System.Console.WriteLine(a1);
+// // Прога, которая принимает на вход число (N) и 
+// // выдает таблицу квадратов чисел от 1 до N
+// // 5 -> 1, 4, 9, 16, 25
+// // 2 -> 1, 4
+
+Console.WriteLine("Введите число: ");
+int num = int.Parse(Console.ReadLine());
+
+for (int i = 1; i <= num; i++)
+{
+    Console.Write($"{Math.Pow(i, 2)}, ");
+}
+
+Console.WriteLine();
