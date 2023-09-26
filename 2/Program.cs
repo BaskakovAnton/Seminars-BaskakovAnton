@@ -3,7 +3,6 @@
 // {
 //     System.Console.Write($"{i}, "); 
 // }
-
 // System.Console.Write("\b\b ");
 
 // Напишите программу, которая выводит случайное число из отрезка [10, 99] и показывает наибольшую цифру числа.
@@ -71,15 +70,21 @@
 // 25, 5 -> да
 // 8, 9 -> нет
 
-System.Console.WriteLine("Введите первое число: ");
-int num_1 = int.Parse(Console.ReadLine());
-System.Console.WriteLine("Введите второе число: ");
-int num_2 = int.Parse(Console.ReadLine());
-if (num_2 * num_2 == num_1 || num_1 * num_1 == num_2)
+internal class Program
 {
-    System.Console.WriteLine($"{num_1}, {num_2} -> да");
-}
-else
-{
-    System.Console.WriteLine($"{num_1}, {num_2} -> нет");
+    private static void Main(string[] args)
+    {
+        Console.WriteLine("Введите первое число: ");
+        int num_1 = int.Parse(Console.ReadLine());
+        Console.WriteLine("Введите второе число: ");
+        int num_2 = int.Parse(Console.ReadLine());
+        if (num_2 * num_2 == num_1 || num_1 * num_1 == num_2)
+        {
+            Console.WriteLine($"{num_1}, {num_2} -> да");
+        }
+        else
+        {
+            Console.WriteLine($"{num_1}, {num_2} -> нет");
+        }
+    }
 }
