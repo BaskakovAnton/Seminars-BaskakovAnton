@@ -2,3 +2,19 @@
 // 452 -> 11
 // 82 -> 10
 // 9012 -> 12
+
+
+Console.WriteLine("Введите число: ");
+        int number = int.Parse(Console.ReadLine());
+
+        int sum = 0;
+
+        while (number != 0)
+        {
+            int digit = number % 10; // Получаем последнюю цифру числа
+            sum += digit; // Добавляем цифру к сумме
+            number /= 10; // Убираем последнюю цифру из числа
+        }
+
+        Console.WriteLine($"Сумма цифр в числе: {sum}");
+
