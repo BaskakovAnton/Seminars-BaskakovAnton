@@ -7,7 +7,7 @@ void Mass(int col)
     int[] arry = new int[col];
     for (int i = 0; i < arry.Length; i++)
     {
-        arry[i] = new Random().Next(0, 2);
+        arry[i] = new Random().Next(0, 100);
         System.Console.Write($"{arry[i]} ");
     }
 }
