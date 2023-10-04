@@ -98,6 +98,6 @@ void Mass(int col)
         System.Console.Write($"{arry[i]} ");
     }
 }
-System.Console.WriteLine("Введите лину массива: ");
+System.Console.WriteLine("Введите длину массива: ");
 int n = int.Parse(System.Console.ReadLine());
 Mass(n);
